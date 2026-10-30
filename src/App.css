@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'DigiLalezar';
+    src: url('/images/Digi Lalezar Plus.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DigiLalezarGrunge';
+    src: url('/images/Digi Lalezar Plus Grunge.ttf') format('truetype'),
+         url('/images/Digi Lalezar Plus Grunge.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DigiLalezarCircle';
+    src: url('/images/Digi Lalezar Plus Circle.ttf') format('truetype'),
+         url('/images/Digi Lalezar Plus Circle.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+  body {
+    font-family: 'DigiLalezar', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }

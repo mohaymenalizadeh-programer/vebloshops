@@ -1,0 +1,256 @@
+.custom-site-footer-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    direction: rtl;
+    font-family: inherit;
+    color: #333333;
+    box-sizing: border-box;
+  }
+  
+  .custom-site-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 40px 30px 40px;
+    box-sizing: border-box;
+    gap: 60px;
+  }
+  
+  /* بخش راست (منوها و لوگو) */
+  .custom-site-footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-site-footer-logo-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+  }
+  
+  .custom-site-footer-logo {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .custom-site-footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .custom-site-footer-col {
+    flex: 1;
+  }
+  
+  .custom-site-footer-col h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222222;
+    margin: 0 0 18px 0;
+  }
+  
+  .custom-site-footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .custom-site-footer-col li {
+    margin-bottom: 12px;
+  }
+  
+  .custom-site-footer-col a {
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .custom-site-footer-col a:hover {
+    color: #000000;
+  }
+  
+  /* بخش چپ (خبرنامه و نمادها) */
+  .custom-site-footer-left {
+    flex: 0 0 350px;
+    border-right: 1px solid #f0f0f0;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .custom-site-footer-newsletter h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #222222;
+  }
+  
+  .custom-site-footer-newsletter p {
+    font-size: 12px;
+    color: #777777;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+  }
+  
+  .custom-site-footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-site-footer-input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-site-footer-input-group input {
+    width: 100%;
+    height: 42px;
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 0 45px 0 16px;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .custom-site-footer-input-group button {
+    position: absolute;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    color: #555;
+  }
+  
+  .custom-site-footer-error {
+    color: #e53935;
+    font-size: 11px;
+    margin-top: 8px;
+    display: block;
+  }
+  
+  .custom-site-footer-bottom-left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .custom-site-footer-enamad img {
+    width: 70px;
+    height: auto;
+    display: block;
+  }
+  
+  .custom-site-footer-socials {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  
+  .custom-site-footer-socials a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+  }
+  
+  .custom-site-footer-socials a:hover {
+    opacity: 0.7;
+  }
+  
+  /* نوار پایین برای توسعه‌دهنده */
+  .custom-site-footer-bottom-bar {
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+    padding: 14px 0;
+    background-color: #fafafa;
+  }
+  
+  .custom-site-footer-bottom-bar p {
+    margin: 0;
+    font-size: 12px;
+    color: #777777;
+    direction: ltr;
+  }
+  
+  /* دکمه پشتیبانی شناور */
+  .custom-site-footer-floating-support {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    transition: transform 0.2s ease;
+  }
+  
+  .custom-site-footer-floating-support:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ریسپانسیو */
+  @media (max-width: 992px) {
+    .custom-site-footer-container {
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 40px;
+    }
+  
+    .custom-site-footer-left {
+      border-right: none;
+      border-top: 1px solid #f0f0f0;
+      padding-right: 0;
+      padding-top: 30px;
+      width: 100%;
+    }
+  
+    .custom-site-footer-right {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .custom-site-footer-columns {
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .custom-site-footer-floating-support {
+      bottom: 16px;
+      left: 16px;
+      width: 42px;
+      height: 42px;
+    }
+  }

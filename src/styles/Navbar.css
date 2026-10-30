@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  border: none; 
+  border-bottom: none; 
+}
+
+.navbar.scrolled {
+  background: #ffffff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+.looogooo{
+  width: 100px;
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: inherit;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-login {
+  display: flex;
+  align-items: center;
+}
+
+.btnnavbar {
+  border: none;
+  background: none;
+  height: 42px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.pnavbar {
+  color: inherit;
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-btn {
+  display: none;
+}
+
+.menu-icons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    color: #ffffff;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .icon-item {
+    display: none;
+  }
+
+  .icons {
+    margin-inline-start: auto;
+    margin-inline-end: 12px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #000000;
+    color: #ffffff;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    z-index: 200;
+  }
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 80px 20px 30px;
+  }
+
+  .nav-links a {
+    color: #ffffff;
+  }
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

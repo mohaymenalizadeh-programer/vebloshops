@@ -1,0 +1,129 @@
+.custom-hero-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.custom-hero-slider-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  cursor: grab;
+  user-select: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-hero-slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-hero-slider-track.custom-hero-slider-active {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.custom-hero-slider-card {
+  flex: 0 0 calc(25% - 12px);
+  height: 60vh;
+  min-height: 350px;
+  scroll-snap-align: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-hero-slider-card:nth-child(2n) {
+  flex: 0 0 calc(50% - 12px);
+}
+
+.custom-hero-slider-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.custom-hero-slider-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.custom-hero-slider-overlay h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.custom-hero-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background 0.2s ease;
+}
+
+.custom-hero-slider-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.custom-hero-slider-prev {
+  left: 15px;
+}
+
+.custom-hero-slider-next {
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .custom-hero-slider-card,
+  .custom-hero-slider-card:nth-child(2n) {
+    flex: 0 0 85%;
+  }
+
+  .custom-hero-slider-card {
+    height: 45vh;
+  }
+
+  .custom-hero-slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .custom-hero-slider-prev {
+    left: 8px;
+  }
+
+  .custom-hero-slider-next {
+    right: 8px;
+  }
+}
