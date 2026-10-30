@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import "../styles/Homepage.css"
 
 const slides = [
-  { id: 1, image: '/images/slider-2-copy-2-6add99c191a52 (1).webp', alt: 'توضیح تصویر اول' },
-  { id: 2, image: '/images/tolica-6-1-copy-6add9a663095a.webp', alt: 'توضیح تصویر دوم' },
-  { id: 3, image: '/images/tolica-7-2-6ab3d418d3a18.webp', alt: 'توضیح تصویر سوم' },
+  { id: 1, image: './images/slider-2-copy-2-6add99c191a52 (1).webp', alt: 'توضیح تصویر اول' },
+  { id: 2, image: './images/tolica-6-1-copy-6add9a663095a.webp', alt: 'توضیح تصویر دوم' },
+  { id: 3, image: './images/tolica-7-2-6ab3d418d3a18.webp', alt: 'توضیح تصویر سوم' },
 ]
 
 export default function Homepage() {
